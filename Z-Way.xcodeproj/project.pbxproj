@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		243BFAF715E4195E00F45D98 /* ZWDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BFAF615E4195E00F45D98 /* ZWDataStore.m */; };
+		243BFAF915E41D1900F45D98 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243BFAF815E41D1900F45D98 /* CoreData.framework */; };
+		243BFAFC15E4223000F45D98 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 243BFAFA15E4223000F45D98 /* Model.xcdatamodeld */; };
+		243BFB0015E42B8F00F45D98 /* ZWProfileEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BFAFE15E42B8F00F45D98 /* ZWProfileEditController.m */; };
+		24471D8E15ECEE030046FF64 /* libGMGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24471D8B15ECEDEF0046FF64 /* libGMGridView.a */; };
+		24471D9215ECF2D90046FF64 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 24471D9015ECF2D90046FF64 /* Icon.png */; };
+		24471D9315ECF2D90046FF64 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24471D9115ECF2D90046FF64 /* Icon@2x.png */; };
+		24471D9615ED043B0046FF64 /* ZWDeviceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 24471D9515ED043B0046FF64 /* ZWDeviceItem.m */; };
+		245993C315E4BC4100692406 /* ZWDeviceItemSensorBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 245993C215E4BC4100692406 /* ZWDeviceItemSensorBinary.m */; };
+		245993C515E4BC6900692406 /* ZWDeviceItemSensorBinary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245993C415E4BC6900692406 /* ZWDeviceItemSensorBinary.xib */; };
+		245993C815E4C1C700692406 /* ZWDeviceItemSensorMulti.m in Sources */ = {isa = PBXBuildFile; fileRef = 245993C715E4C1C700692406 /* ZWDeviceItemSensorMulti.m */; };
+		245993CA15E4C1DA00692406 /* ZWDeviceItemSensorMulti.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245993C915E4C1DA00692406 /* ZWDeviceItemSensorMulti.xib */; };
+		245993CC15E4CC0E00692406 /* ZWDeviceItemMeter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245993CB15E4CC0D00692406 /* ZWDeviceItemMeter.xib */; };
+		245993CF15E4CC3500692406 /* ZWDeviceItemMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 245993CE15E4CC3500692406 /* ZWDeviceItemMeter.m */; };
+		245B16AC15E4573C00978FD7 /* ZWTextEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245B16AB15E4573C00978FD7 /* ZWTextEditCell.xib */; };
+		245B16AE15E45AE200978FD7 /* ZWPasswordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245B16AD15E45AE200978FD7 /* ZWPasswordCell.xib */; };
+		245B16B115E4663D00978FD7 /* NSString+Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B16B015E4663D00978FD7 /* NSString+Encoding.m */; };
+		245B16B615E4676600978FD7 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 245B16B215E4676500978FD7 /* Base64Transcoder.c */; };
+		245B16B715E4676600978FD7 /* NSData+Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B16B515E4676600978FD7 /* NSData+Encoding.m */; };
+		245B16B915E47B5700978FD7 /* ZWDeviceItemSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245B16B815E47B5700978FD7 /* ZWDeviceItemSwitch.xib */; };
+		245B16BB15E47F4E00978FD7 /* ZWDeviceItemDimmer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245B16BA15E47F4E00978FD7 /* ZWDeviceItemDimmer.xib */; };
+		245B16BE15E47FD400978FD7 /* ZWDeviceItemDimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B16BD15E47FD400978FD7 /* ZWDeviceItemDimmer.m */; };
+		245B16C115E4926600978FD7 /* ZWRootViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 245B16C015E4926600978FD7 /* ZWRootViewCell.m */; };
+		246EB0FB15DEF0710099EB7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246EB0FA15DEF0710099EB7E /* UIKit.framework */; };
+		246EB0FD15DEF0710099EB7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246EB0FC15DEF0710099EB7E /* Foundation.framework */; };
+		246EB0FF15DEF0710099EB7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246EB0FE15DEF0710099EB7E /* CoreGraphics.framework */; };
+		246EB10715DEF0710099EB7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246EB10615DEF0710099EB7E /* main.m */; };
+		246EB10B15DEF0710099EB7E /* ZWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 246EB10A15DEF0710099EB7E /* ZWAppDelegate.m */; };
+		246EB12915DEF55D0099EB7E /* ZWRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246EB12715DEF55D0099EB7E /* ZWRootViewController.m */; };
+		246EB12C15DEFAF50099EB7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246EB12B15DEFAF50099EB7E /* QuartzCore.framework */; };
+		246EB13115DF05120099EB7E /* ZWCategoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 246EB13015DF05110099EB7E /* ZWCategoryItem.m */; };
+		2484C9C315F537F7008E60EF /* ZWDevicesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9C215F537F7008E60EF /* ZWDevicesView.xib */; };
+		2484C9C515F53875008E60EF /* ZWRootViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9C415F53875008E60EF /* ZWRootViewController_iPhone.xib */; };
+		2484C9C715F53896008E60EF /* ZWProfilesController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9C615F53896008E60EF /* ZWProfilesController_iPhone.xib */; };
+		2484C9C915F538B0008E60EF /* ZWProfileEditController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9C815F538B0008E60EF /* ZWProfileEditController_iPhone.xib */; };
+		2484C9CC15F5396A008E60EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9CE15F5396A008E60EF /* Localizable.strings */; };
+		2484C9D715F54439008E60EF /* lights.png in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9D615F54439008E60EF /* lights.png */; };
+		2484C9DA15F54884008E60EF /* meters.png in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9D815F54883008E60EF /* meters.png */; };
+		2484C9DB15F54884008E60EF /* sensors.png in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9D915F54883008E60EF /* sensors.png */; };
+		2484C9DD15F5491A008E60EF /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9DC15F5491A008E60EF /* house.png */; };
+		2484C9DF15F549F0008E60EF /* thermostats.png in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9DE15F549F0008E60EF /* thermostats.png */; };
+		2484C9E115F54AE1008E60EF /* batteries.png in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9E015F54AE1008E60EF /* batteries.png */; };
+		2484C9F915F55B3D008E60EF /* ZWDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484C9F815F55B3C008E60EF /* ZWDeviceInfo.m */; };
+		2484C9FF15F580E5008E60EF /* ZWDeviceItemBattery.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2484C9FE15F580E4008E60EF /* ZWDeviceItemBattery.xib */; };
+		2484CA0215F58117008E60EF /* ZWDeviceItemBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484CA0115F58116008E60EF /* ZWDeviceItemBattery.m */; };
+		2484CA0515F58BF4008E60EF /* ZWRulesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484CA0415F58BF4008E60EF /* ZWRulesLoader.m */; };
+		2484CA0C15F58DA7008E60EF /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484CA0715F58D9F008E60EF /* TFHpple.m */; };
+		2484CA0D15F58DA7008E60EF /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484CA0915F58DA2008E60EF /* TFHppleElement.m */; };
+		2484CA1115F58E4B008E60EF /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484CA1015F58E49008E60EF /* XPathQuery.m */; };
+		2484CA1D15F5A9AE008E60EF /* blinds.png in Resources */ = {isa = PBXBuildFile; fileRef = 2484CA1C15F5A9AE008E60EF /* blinds.png */; };
+		2484CA1F15F5AC36008E60EF /* ZWDeviceItemBlinds.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2484CA1E15F5AC35008E60EF /* ZWDeviceItemBlinds.xib */; };
+		2484CA2215F5AC55008E60EF /* ZWDeviceItemBlinds.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484CA2115F5AC53008E60EF /* ZWDeviceItemBlinds.m */; };
+		2484CA2515F5B3B5008E60EF /* ZWBlindsControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484CA2415F5B3B4008E60EF /* ZWBlindsControl.m */; };
+		2484CA2815F5B75D008E60EF /* arrow-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 2484CA2615F5B75B008E60EF /* arrow-down.png */; };
+		2484CA2915F5B75D008E60EF /* arrow-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 2484CA2715F5B75C008E60EF /* arrow-up.png */; };
+		248EE90415EAA48600E556D4 /* refreshing.png in Resources */ = {isa = PBXBuildFile; fileRef = 248EE90315EAA48600E556D4 /* refreshing.png */; };
+		2490581F15EC086A009D3806 /* ZWDeviceItemThermostat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490581E15EC086A009D3806 /* ZWDeviceItemThermostat.m */; };
+		2490582115EC0881009D3806 /* ZWDeviceItemThermostat.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2490582015EC0881009D3806 /* ZWDeviceItemThermostat.xib */; };
+		2492FD1015DF0D1F00D631BF /* ZWDataUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD0F15DF0D1F00D631BF /* ZWDataUpdater.m */; };
+		2492FD1415DF0E7A00D631BF /* ZWJsonUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD1315DF0E7A00D631BF /* ZWJsonUpdater.m */; };
+		2492FD2D15DF114D00D631BF /* ZWDataTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD2C15DF114D00D631BF /* ZWDataTree.m */; };
+		2492FD3415DF1DA600D631BF /* ZWDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD3215DF1DA600D631BF /* ZWDevicesViewController.m */; };
+		2492FD3F15DF2FA500D631BF /* ZWDeviceItemSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD3E15DF2FA400D631BF /* ZWDeviceItemSwitch.m */; };
+		2492FD4215DF3A6000D631BF /* ZWRunCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD4115DF3A6000D631BF /* ZWRunCommand.m */; };
+		2492FD6415E40FDC00D631BF /* ZWProfilesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD6215E40FDC00D631BF /* ZWProfilesController.m */; };
+		2492FD6D15E417CC00D631BF /* CMProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD6C15E417CC00D631BF /* CMProfile.m */; };
+		24FD17641623748A00AA57DC /* ZWUrlEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17631623748A00AA57DC /* ZWUrlEditCell.xib */; };
+		24FD176A16237D8700AA57DC /* refreshing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD176916237D8700AA57DC /* refreshing@2x.png */; };
+		24FD176D16237E4C00AA57DC /* arrow-down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD176B16237E4C00AA57DC /* arrow-down@2x.png */; };
+		24FD176E16237E4C00AA57DC /* arrow-up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD176C16237E4C00AA57DC /* arrow-up@2x.png */; };
+		24FD17811625EEDD00AA57DC /* connected-g.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD177D1625EEDD00AA57DC /* connected-g.png */; };
+		24FD17821625EEDD00AA57DC /* connected-g@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD177E1625EEDD00AA57DC /* connected-g@2x.png */; };
+		24FD17831625EEDD00AA57DC /* connected-w.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD177F1625EEDD00AA57DC /* connected-w.png */; };
+		24FD17841625EEDD00AA57DC /* connected-w@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17801625EEDD00AA57DC /* connected-w@2x.png */; };
+		24FD17891625F05200AA57DC /* disconnected-g.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17851625F05200AA57DC /* disconnected-g.png */; };
+		24FD178A1625F05200AA57DC /* disconnected-g@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17861625F05200AA57DC /* disconnected-g@2x.png */; };
+		24FD178B1625F05200AA57DC /* disconnected-w.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17871625F05200AA57DC /* disconnected-w.png */; };
+		24FD178C1625F05200AA57DC /* disconnected-w@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17881625F05200AA57DC /* disconnected-w@2x.png */; };
+		24FD178E1625FD3100AA57DC /* house@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD178D1625FD3100AA57DC /* house@2x.png */; };
+		24FD1790162600E900AA57DC /* lights@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD178F162600E900AA57DC /* lights@2x.png */; };
+		24FD1792162605BD00AA57DC /* sensors@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD1791162605BC00AA57DC /* sensors@2x.png */; };
+		24FD1794162607F600AA57DC /* meters@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD1793162607F600AA57DC /* meters@2x.png */; };
+		24FD17961626097700AA57DC /* thermostats@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17951626097700AA57DC /* thermostats@2x.png */; };
+		24FD179816260BD300AA57DC /* batteries@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD179716260BD300AA57DC /* batteries@2x.png */; };
+		24FD179A16260F5A00AA57DC /* blinds@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD179916260F5900AA57DC /* blinds@2x.png */; };
+		24FD179D1626175300AA57DC /* ZWPickerPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FD179C1626175200AA57DC /* ZWPickerPopup.m */; };
+		24FD179F1626270C00AA57DC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD179E1626270B00AA57DC /* Icon-72.png */; };
+		24FD17A11626271400AA57DC /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17A01626271300AA57DC /* Icon-72@2x.png */; };
+		24FD17AD16263F2F00AA57DC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17AC16263F2E00AA57DC /* Default.png */; };
+		24FD17AF16263F3700AA57DC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17AE16263F3500AA57DC /* Default@2x.png */; };
+		24FD17B116263F3F00AA57DC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17B016263F3D00AA57DC /* Default-568h@2x.png */; };
+		24FD17B316263F5000AA57DC /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17B216263F4E00AA57DC /* Default-Portrait~ipad.png */; };
+		24FD17B516263F5B00AA57DC /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17B416263F5A00AA57DC /* Default-Portrait@2x~ipad.png */; };
+		24FD17B716263F7300AA57DC /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17B616263F7200AA57DC /* Default-Landscape~ipad.png */; };
+		24FD17B916263F7E00AA57DC /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17B816263F7D00AA57DC /* Default-Landscape@2x~ipad.png */; };
+		24FD17C01626427F00AA57DC /* house@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17BE1626427F00AA57DC /* house@2x~ipad.png */; };
+		24FD17C11626427F00AA57DC /* house~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17BF1626427F00AA57DC /* house~ipad.png */; };
+		24FD17CE162643D200AA57DC /* batteries@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17C2162643D100AA57DC /* batteries@2x~ipad.png */; };
+		24FD17CF162643D200AA57DC /* batteries~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17C3162643D100AA57DC /* batteries~ipad.png */; };
+		24FD17D0162643D200AA57DC /* blinds@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17C4162643D100AA57DC /* blinds@2x~ipad.png */; };
+		24FD17D1162643D200AA57DC /* blinds~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17C5162643D100AA57DC /* blinds~ipad.png */; };
+		24FD17D2162643D200AA57DC /* lights@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17C6162643D100AA57DC /* lights@2x~ipad.png */; };
+		24FD17D3162643D200AA57DC /* lights~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17C7162643D100AA57DC /* lights~ipad.png */; };
+		24FD17D4162643D200AA57DC /* meters@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17C8162643D100AA57DC /* meters@2x~ipad.png */; };
+		24FD17D5162643D200AA57DC /* meters~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17C9162643D100AA57DC /* meters~ipad.png */; };
+		24FD17D6162643D200AA57DC /* sensors@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17CA162643D100AA57DC /* sensors@2x~ipad.png */; };
+		24FD17D7162643D200AA57DC /* sensors~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17CB162643D200AA57DC /* sensors~ipad.png */; };
+		24FD17D8162643D200AA57DC /* thermostats@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17CC162643D200AA57DC /* thermostats@2x~ipad.png */; };
+		24FD17D9162643D200AA57DC /* thermostats~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17CD162643D200AA57DC /* thermostats~ipad.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24471D8A15ECEDEF0046FF64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78509312149FAC2E000787E4;
+			remoteInfo = GMGridView;
+		};
+		24471D8C15ECEDF90046FF64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78509311149FAC2E000787E4;
+			remoteInfo = GMGridView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		243BFAF515E4195E00F45D98 /* ZWDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDataStore.h; sourceTree = "<group>"; };
+		243BFAF615E4195E00F45D98 /* ZWDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDataStore.m; sourceTree = "<group>"; };
+		243BFAF815E41D1900F45D98 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		243BFAFB15E4223000F45D98 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		243BFAFD15E42B8F00F45D98 /* ZWProfileEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWProfileEditController.h; sourceTree = "<group>"; };
+		243BFAFE15E42B8F00F45D98 /* ZWProfileEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWProfileEditController.m; sourceTree = "<group>"; };
+		24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GMGridView.xcodeproj; path = ../GMGridView/GMGridView/GMGridView.xcodeproj; sourceTree = "<group>"; };
+		24471D9015ECF2D90046FF64 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		24471D9115ECF2D90046FF64 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		24471D9415ED043B0046FF64 /* ZWDeviceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItem.h; sourceTree = "<group>"; };
+		24471D9515ED043B0046FF64 /* ZWDeviceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceItem.m; sourceTree = "<group>"; };
+		245993C115E4BC4100692406 /* ZWDeviceItemSensorBinary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItemSensorBinary.h; sourceTree = "<group>"; };
+		245993C215E4BC4100692406 /* ZWDeviceItemSensorBinary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceItemSensorBinary.m; sourceTree = "<group>"; };
+		245993C415E4BC6900692406 /* ZWDeviceItemSensorBinary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWDeviceItemSensorBinary.xib; sourceTree = "<group>"; };
+		245993C615E4C1C700692406 /* ZWDeviceItemSensorMulti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItemSensorMulti.h; sourceTree = "<group>"; };
+		245993C715E4C1C700692406 /* ZWDeviceItemSensorMulti.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceItemSensorMulti.m; sourceTree = "<group>"; };
+		245993C915E4C1DA00692406 /* ZWDeviceItemSensorMulti.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWDeviceItemSensorMulti.xib; sourceTree = "<group>"; };
+		245993CB15E4CC0D00692406 /* ZWDeviceItemMeter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWDeviceItemMeter.xib; sourceTree = "<group>"; };
+		245993CD15E4CC3500692406 /* ZWDeviceItemMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItemMeter.h; sourceTree = "<group>"; };
+		245993CE15E4CC3500692406 /* ZWDeviceItemMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceItemMeter.m; sourceTree = "<group>"; };
+		245B16AB15E4573C00978FD7 /* ZWTextEditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWTextEditCell.xib; sourceTree = "<group>"; };
+		245B16AD15E45AE200978FD7 /* ZWPasswordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWPasswordCell.xib; sourceTree = "<group>"; };
+		245B16AF15E4663D00978FD7 /* NSString+Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encoding.h"; sourceTree = "<group>"; };
+		245B16B015E4663D00978FD7 /* NSString+Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encoding.m"; sourceTree = "<group>"; };
+		245B16B215E4676500978FD7 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		245B16B315E4676500978FD7 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		245B16B415E4676500978FD7 /* NSData+Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encoding.h"; sourceTree = "<group>"; };
+		245B16B515E4676600978FD7 /* NSData+Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encoding.m"; sourceTree = "<group>"; };
+		245B16B815E47B5700978FD7 /* ZWDeviceItemSwitch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWDeviceItemSwitch.xib; sourceTree = "<group>"; };
+		245B16BA15E47F4E00978FD7 /* ZWDeviceItemDimmer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWDeviceItemDimmer.xib; sourceTree = "<group>"; };
+		245B16BC15E47FD400978FD7 /* ZWDeviceItemDimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItemDimmer.h; sourceTree = "<group>"; };
+		245B16BD15E47FD400978FD7 /* ZWDeviceItemDimmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceItemDimmer.m; sourceTree = "<group>"; };
+		245B16BF15E4926600978FD7 /* ZWRootViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRootViewCell.h; sourceTree = "<group>"; };
+		245B16C015E4926600978FD7 /* ZWRootViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWRootViewCell.m; sourceTree = "<group>"; };
+		246EB0F615DEF0710099EB7E /* Z-Way.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Z-Way.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		246EB0FA15DEF0710099EB7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		246EB0FC15DEF0710099EB7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		246EB0FE15DEF0710099EB7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		246EB10215DEF0710099EB7E /* Z-Way-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Z-Way-Info.plist"; sourceTree = "<group>"; };
+		246EB10615DEF0710099EB7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		246EB10815DEF0710099EB7E /* Z-Way-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Z-Way-Prefix.pch"; sourceTree = "<group>"; };
+		246EB10915DEF0710099EB7E /* ZWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWAppDelegate.h; sourceTree = "<group>"; };
+		246EB10A15DEF0710099EB7E /* ZWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWAppDelegate.m; sourceTree = "<group>"; };
+		246EB12615DEF55D0099EB7E /* ZWRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRootViewController.h; sourceTree = "<group>"; };
+		246EB12715DEF55D0099EB7E /* ZWRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWRootViewController.m; sourceTree = "<group>"; };
+		246EB12B15DEFAF50099EB7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		246EB12F15DF05110099EB7E /* ZWCategoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCategoryItem.h; sourceTree = "<group>"; };
+		246EB13015DF05110099EB7E /* ZWCategoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCategoryItem.m; sourceTree = "<group>"; };
+		2484C9C215F537F7008E60EF /* ZWDevicesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWDevicesView.xib; sourceTree = "<group>"; };
+		2484C9C415F53875008E60EF /* ZWRootViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWRootViewController_iPhone.xib; sourceTree = "<group>"; };
+		2484C9C615F53896008E60EF /* ZWProfilesController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWProfilesController_iPhone.xib; sourceTree = "<group>"; };
+		2484C9C815F538B0008E60EF /* ZWProfileEditController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWProfileEditController_iPhone.xib; sourceTree = "<group>"; };
+		2484C9CD15F5396A008E60EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2484C9CF15F539AF008E60EF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2484C9D615F54439008E60EF /* lights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lights.png; path = "Z-Way/lights.png"; sourceTree = "<group>"; };
+		2484C9D815F54883008E60EF /* meters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = meters.png; path = "Z-Way/meters.png"; sourceTree = "<group>"; };
+		2484C9D915F54883008E60EF /* sensors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sensors.png; path = "Z-Way/sensors.png"; sourceTree = "<group>"; };
+		2484C9DC15F5491A008E60EF /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = house.png; path = "Z-Way/house.png"; sourceTree = "<group>"; };
+		2484C9DE15F549F0008E60EF /* thermostats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thermostats.png; path = "Z-Way/thermostats.png"; sourceTree = "<group>"; };
+		2484C9E015F54AE1008E60EF /* batteries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = batteries.png; path = "Z-Way/batteries.png"; sourceTree = "<group>"; };
+		2484C9F715F55B3C008E60EF /* ZWDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceInfo.h; sourceTree = "<group>"; };
+		2484C9F815F55B3C008E60EF /* ZWDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceInfo.m; sourceTree = "<group>"; };
+		2484C9FE15F580E4008E60EF /* ZWDeviceItemBattery.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWDeviceItemBattery.xib; sourceTree = "<group>"; };
+		2484CA0015F58116008E60EF /* ZWDeviceItemBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItemBattery.h; sourceTree = "<group>"; };
+		2484CA0115F58116008E60EF /* ZWDeviceItemBattery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceItemBattery.m; sourceTree = "<group>"; };
+		2484CA0315F58BF3008E60EF /* ZWRulesLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRulesLoader.h; sourceTree = "<group>"; };
+		2484CA0415F58BF4008E60EF /* ZWRulesLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWRulesLoader.m; sourceTree = "<group>"; };
+		2484CA0615F58D9E008E60EF /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		2484CA0715F58D9F008E60EF /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		2484CA0815F58DA0008E60EF /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		2484CA0915F58DA2008E60EF /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		2484CA0F15F58E48008E60EF /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		2484CA1015F58E49008E60EF /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		2484CA1C15F5A9AE008E60EF /* blinds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blinds.png; path = "Z-Way/blinds.png"; sourceTree = "<group>"; };
+		2484CA1E15F5AC35008E60EF /* ZWDeviceItemBlinds.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWDeviceItemBlinds.xib; sourceTree = "<group>"; };
+		2484CA2015F5AC52008E60EF /* ZWDeviceItemBlinds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItemBlinds.h; sourceTree = "<group>"; };
+		2484CA2115F5AC53008E60EF /* ZWDeviceItemBlinds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceItemBlinds.m; sourceTree = "<group>"; };
+		2484CA2315F5B3B3008E60EF /* ZWBlindsControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWBlindsControl.h; sourceTree = "<group>"; };
+		2484CA2415F5B3B4008E60EF /* ZWBlindsControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWBlindsControl.m; sourceTree = "<group>"; };
+		2484CA2615F5B75B008E60EF /* arrow-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-down.png"; path = "Z-Way/arrow-down.png"; sourceTree = "<group>"; };
+		2484CA2715F5B75C008E60EF /* arrow-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-up.png"; path = "Z-Way/arrow-up.png"; sourceTree = "<group>"; };
+		248EE90315EAA48600E556D4 /* refreshing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshing.png; path = "Z-Way/refreshing.png"; sourceTree = "<group>"; };
+		2490581D15EC086A009D3806 /* ZWDeviceItemThermostat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItemThermostat.h; sourceTree = "<group>"; };
+		2490581E15EC086A009D3806 /* ZWDeviceItemThermostat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceItemThermostat.m; sourceTree = "<group>"; };
+		2490582015EC0881009D3806 /* ZWDeviceItemThermostat.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWDeviceItemThermostat.xib; sourceTree = "<group>"; };
+		2490582815ECE466009D3806 /* Z-Way.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Z-Way.entitlements"; sourceTree = "<group>"; };
+		2492FD0E15DF0D1F00D631BF /* ZWDataUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDataUpdater.h; sourceTree = "<group>"; };
+		2492FD0F15DF0D1F00D631BF /* ZWDataUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDataUpdater.m; sourceTree = "<group>"; };
+		2492FD1115DF0D6C00D631BF /* ZWDataUpdaterEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWDataUpdaterEvents.h; sourceTree = "<group>"; };
+		2492FD1215DF0E7A00D631BF /* ZWJsonUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWJsonUpdater.h; sourceTree = "<group>"; };
+		2492FD1315DF0E7A00D631BF /* ZWJsonUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWJsonUpdater.m; sourceTree = "<group>"; };
+		2492FD2B15DF114D00D631BF /* ZWDataTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDataTree.h; sourceTree = "<group>"; };
+		2492FD2C15DF114D00D631BF /* ZWDataTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDataTree.m; sourceTree = "<group>"; };
+		2492FD3115DF1DA600D631BF /* ZWDevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDevicesViewController.h; sourceTree = "<group>"; };
+		2492FD3215DF1DA600D631BF /* ZWDevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDevicesViewController.m; sourceTree = "<group>"; };
+		2492FD3D15DF2FA400D631BF /* ZWDeviceItemSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItemSwitch.h; sourceTree = "<group>"; };
+		2492FD3E15DF2FA400D631BF /* ZWDeviceItemSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDeviceItemSwitch.m; sourceTree = "<group>"; };
+		2492FD4015DF3A6000D631BF /* ZWRunCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRunCommand.h; sourceTree = "<group>"; };
+		2492FD4115DF3A6000D631BF /* ZWRunCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWRunCommand.m; sourceTree = "<group>"; };
+		2492FD6115E40FDC00D631BF /* ZWProfilesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWProfilesController.h; sourceTree = "<group>"; };
+		2492FD6215E40FDC00D631BF /* ZWProfilesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWProfilesController.m; sourceTree = "<group>"; };
+		2492FD6B15E417CC00D631BF /* CMProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMProfile.h; sourceTree = "<group>"; };
+		2492FD6C15E417CC00D631BF /* CMProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMProfile.m; sourceTree = "<group>"; };
+		24FD17631623748A00AA57DC /* ZWUrlEditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWUrlEditCell.xib; sourceTree = "<group>"; };
+		24FD176916237D8700AA57DC /* refreshing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "refreshing@2x.png"; path = "Z-Way/refreshing@2x.png"; sourceTree = "<group>"; };
+		24FD176B16237E4C00AA57DC /* arrow-down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-down@2x.png"; path = "Z-Way/arrow-down@2x.png"; sourceTree = "<group>"; };
+		24FD176C16237E4C00AA57DC /* arrow-up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-up@2x.png"; path = "Z-Way/arrow-up@2x.png"; sourceTree = "<group>"; };
+		24FD177D1625EEDD00AA57DC /* connected-g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "connected-g.png"; path = "Z-Way/connected-g.png"; sourceTree = "<group>"; };
+		24FD177E1625EEDD00AA57DC /* connected-g@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "connected-g@2x.png"; path = "Z-Way/connected-g@2x.png"; sourceTree = "<group>"; };
+		24FD177F1625EEDD00AA57DC /* connected-w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "connected-w.png"; path = "Z-Way/connected-w.png"; sourceTree = "<group>"; };
+		24FD17801625EEDD00AA57DC /* connected-w@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "connected-w@2x.png"; path = "Z-Way/connected-w@2x.png"; sourceTree = "<group>"; };
+		24FD17851625F05200AA57DC /* disconnected-g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disconnected-g.png"; path = "Z-Way/disconnected-g.png"; sourceTree = "<group>"; };
+		24FD17861625F05200AA57DC /* disconnected-g@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disconnected-g@2x.png"; path = "Z-Way/disconnected-g@2x.png"; sourceTree = "<group>"; };
+		24FD17871625F05200AA57DC /* disconnected-w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disconnected-w.png"; path = "Z-Way/disconnected-w.png"; sourceTree = "<group>"; };
+		24FD17881625F05200AA57DC /* disconnected-w@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disconnected-w@2x.png"; path = "Z-Way/disconnected-w@2x.png"; sourceTree = "<group>"; };
+		24FD178D1625FD3100AA57DC /* house@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house@2x.png"; path = "Z-Way/house@2x.png"; sourceTree = "<group>"; };
+		24FD178F162600E900AA57DC /* lights@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lights@2x.png"; path = "Z-Way/lights@2x.png"; sourceTree = "<group>"; };
+		24FD1791162605BC00AA57DC /* sensors@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sensors@2x.png"; path = "Z-Way/sensors@2x.png"; sourceTree = "<group>"; };
+		24FD1793162607F600AA57DC /* meters@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "meters@2x.png"; path = "Z-Way/meters@2x.png"; sourceTree = "<group>"; };
+		24FD17951626097700AA57DC /* thermostats@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thermostats@2x.png"; path = "Z-Way/thermostats@2x.png"; sourceTree = "<group>"; };
+		24FD179716260BD300AA57DC /* batteries@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "batteries@2x.png"; path = "Z-Way/batteries@2x.png"; sourceTree = "<group>"; };
+		24FD179916260F5900AA57DC /* blinds@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blinds@2x.png"; path = "Z-Way/blinds@2x.png"; sourceTree = "<group>"; };
+		24FD179B1626175100AA57DC /* ZWPickerPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPickerPopup.h; sourceTree = "<group>"; };
+		24FD179C1626175200AA57DC /* ZWPickerPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPickerPopup.m; sourceTree = "<group>"; };
+		24FD179E1626270B00AA57DC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		24FD17A01626271300AA57DC /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		24FD17AC16263F2E00AA57DC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		24FD17AE16263F3500AA57DC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		24FD17B016263F3D00AA57DC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		24FD17B216263F4E00AA57DC /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		24FD17B416263F5A00AA57DC /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		24FD17B616263F7200AA57DC /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		24FD17B816263F7D00AA57DC /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		24FD17BE1626427F00AA57DC /* house@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house@2x~ipad.png"; path = "Z-Way/house@2x~ipad.png"; sourceTree = "<group>"; };
+		24FD17BF1626427F00AA57DC /* house~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "house~ipad.png"; path = "Z-Way/house~ipad.png"; sourceTree = "<group>"; };
+		24FD17C2162643D100AA57DC /* batteries@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "batteries@2x~ipad.png"; path = "Z-Way/batteries@2x~ipad.png"; sourceTree = "<group>"; };
+		24FD17C3162643D100AA57DC /* batteries~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "batteries~ipad.png"; path = "Z-Way/batteries~ipad.png"; sourceTree = "<group>"; };
+		24FD17C4162643D100AA57DC /* blinds@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blinds@2x~ipad.png"; path = "Z-Way/blinds@2x~ipad.png"; sourceTree = "<group>"; };
+		24FD17C5162643D100AA57DC /* blinds~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blinds~ipad.png"; path = "Z-Way/blinds~ipad.png"; sourceTree = "<group>"; };
+		24FD17C6162643D100AA57DC /* lights@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lights@2x~ipad.png"; path = "Z-Way/lights@2x~ipad.png"; sourceTree = "<group>"; };
+		24FD17C7162643D100AA57DC /* lights~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lights~ipad.png"; path = "Z-Way/lights~ipad.png"; sourceTree = "<group>"; };
+		24FD17C8162643D100AA57DC /* meters@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "meters@2x~ipad.png"; path = "Z-Way/meters@2x~ipad.png"; sourceTree = "<group>"; };
+		24FD17C9162643D100AA57DC /* meters~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "meters~ipad.png"; path = "Z-Way/meters~ipad.png"; sourceTree = "<group>"; };
+		24FD17CA162643D100AA57DC /* sensors@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sensors@2x~ipad.png"; path = "Z-Way/sensors@2x~ipad.png"; sourceTree = "<group>"; };
+		24FD17CB162643D200AA57DC /* sensors~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sensors~ipad.png"; path = "Z-Way/sensors~ipad.png"; sourceTree = "<group>"; };
+		24FD17CC162643D200AA57DC /* thermostats@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thermostats@2x~ipad.png"; path = "Z-Way/thermostats@2x~ipad.png"; sourceTree = "<group>"; };
+		24FD17CD162643D200AA57DC /* thermostats~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thermostats~ipad.png"; path = "Z-Way/thermostats~ipad.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		246EB0F315DEF0710099EB7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24471D8E15ECEE030046FF64 /* libGMGridView.a in Frameworks */,
+				243BFAF915E41D1900F45D98 /* CoreData.framework in Frameworks */,
+				246EB12C15DEFAF50099EB7E /* QuartzCore.framework in Frameworks */,
+				246EB0FB15DEF0710099EB7E /* UIKit.framework in Frameworks */,
+				246EB0FD15DEF0710099EB7E /* Foundation.framework in Frameworks */,
+				246EB0FF15DEF0710099EB7E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24471D8415ECEDEF0046FF64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24471D8B15ECEDEF0046FF64 /* libGMGridView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		245993C015E4BABB00692406 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				24471D9415ED043B0046FF64 /* ZWDeviceItem.h */,
+				24471D9515ED043B0046FF64 /* ZWDeviceItem.m */,
+				2492FD3D15DF2FA400D631BF /* ZWDeviceItemSwitch.h */,
+				2492FD3E15DF2FA400D631BF /* ZWDeviceItemSwitch.m */,
+				245B16B815E47B5700978FD7 /* ZWDeviceItemSwitch.xib */,
+				245B16BC15E47FD400978FD7 /* ZWDeviceItemDimmer.h */,
+				245B16BD15E47FD400978FD7 /* ZWDeviceItemDimmer.m */,
+				245B16BA15E47F4E00978FD7 /* ZWDeviceItemDimmer.xib */,
+				245993C115E4BC4100692406 /* ZWDeviceItemSensorBinary.h */,
+				245993C215E4BC4100692406 /* ZWDeviceItemSensorBinary.m */,
+				245993C415E4BC6900692406 /* ZWDeviceItemSensorBinary.xib */,
+				245993C615E4C1C700692406 /* ZWDeviceItemSensorMulti.h */,
+				245993C715E4C1C700692406 /* ZWDeviceItemSensorMulti.m */,
+				245993C915E4C1DA00692406 /* ZWDeviceItemSensorMulti.xib */,
+				245993CD15E4CC3500692406 /* ZWDeviceItemMeter.h */,
+				245993CE15E4CC3500692406 /* ZWDeviceItemMeter.m */,
+				245993CB15E4CC0D00692406 /* ZWDeviceItemMeter.xib */,
+				2490581D15EC086A009D3806 /* ZWDeviceItemThermostat.h */,
+				2490581E15EC086A009D3806 /* ZWDeviceItemThermostat.m */,
+				2490582015EC0881009D3806 /* ZWDeviceItemThermostat.xib */,
+				2484CA2015F5AC52008E60EF /* ZWDeviceItemBlinds.h */,
+				2484CA2115F5AC53008E60EF /* ZWDeviceItemBlinds.m */,
+				2484CA1E15F5AC35008E60EF /* ZWDeviceItemBlinds.xib */,
+				2484CA0015F58116008E60EF /* ZWDeviceItemBattery.h */,
+				2484CA0115F58116008E60EF /* ZWDeviceItemBattery.m */,
+				2484C9FE15F580E4008E60EF /* ZWDeviceItemBattery.xib */,
+				2484CA2315F5B3B3008E60EF /* ZWBlindsControl.h */,
+				2484CA2415F5B3B4008E60EF /* ZWBlindsControl.m */,
+				24FD179B1626175100AA57DC /* ZWPickerPopup.h */,
+				24FD179C1626175200AA57DC /* ZWPickerPopup.m */,
+			);
+			name = Devices;
+			sourceTree = "<group>";
+		};
+		246EB0EB15DEF0700099EB7E = {
+			isa = PBXGroup;
+			children = (
+				24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */,
+				24FD17BC162640F800AA57DC /* res */,
+				246EB10015DEF0710099EB7E /* Z-Way */,
+				246EB10115DEF0710099EB7E /* Supporting Files */,
+				246EB0F915DEF0710099EB7E /* Frameworks */,
+				246EB0F715DEF0710099EB7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		246EB0F715DEF0710099EB7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				246EB0F615DEF0710099EB7E /* Z-Way.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		246EB0F915DEF0710099EB7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				243BFAF815E41D1900F45D98 /* CoreData.framework */,
+				246EB0FE15DEF0710099EB7E /* CoreGraphics.framework */,
+				246EB0FC15DEF0710099EB7E /* Foundation.framework */,
+				246EB12B15DEFAF50099EB7E /* QuartzCore.framework */,
+				246EB0FA15DEF0710099EB7E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		246EB10015DEF0710099EB7E /* Z-Way */ = {
+			isa = PBXGroup;
+			children = (
+				2490582815ECE466009D3806 /* Z-Way.entitlements */,
+				245B16AF15E4663D00978FD7 /* NSString+Encoding.h */,
+				245B16B015E4663D00978FD7 /* NSString+Encoding.m */,
+				245B16B215E4676500978FD7 /* Base64Transcoder.c */,
+				245B16B315E4676500978FD7 /* Base64Transcoder.h */,
+				245B16B415E4676500978FD7 /* NSData+Encoding.h */,
+				245B16B515E4676600978FD7 /* NSData+Encoding.m */,
+				2484CA0615F58D9E008E60EF /* TFHpple.h */,
+				2484CA0715F58D9F008E60EF /* TFHpple.m */,
+				2484CA0815F58DA0008E60EF /* TFHppleElement.h */,
+				2484CA0915F58DA2008E60EF /* TFHppleElement.m */,
+				2484CA0F15F58E48008E60EF /* XPathQuery.h */,
+				2484CA1015F58E49008E60EF /* XPathQuery.m */,
+				2492FD6A15E417A300D631BF /* Data Model */,
+				246EB10915DEF0710099EB7E /* ZWAppDelegate.h */,
+				246EB10A15DEF0710099EB7E /* ZWAppDelegate.m */,
+				2492FD2A15DF110D00D631BF /* Network */,
+				2492FD6615E40FEF00D631BF /* Profiles Screen */,
+				2492FD3C15DF2F6C00D631BF /* Main Screen */,
+				2492FD3115DF1DA600D631BF /* ZWDevicesViewController.h */,
+				2492FD3215DF1DA600D631BF /* ZWDevicesViewController.m */,
+				2484C9C215F537F7008E60EF /* ZWDevicesView.xib */,
+				2484C9F715F55B3C008E60EF /* ZWDeviceInfo.h */,
+				2484C9F815F55B3C008E60EF /* ZWDeviceInfo.m */,
+				245993C015E4BABB00692406 /* Devices */,
+			);
+			path = "Z-Way";
+			sourceTree = "<group>";
+		};
+		246EB10115DEF0710099EB7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2484C9CE15F5396A008E60EF /* Localizable.strings */,
+				246EB10215DEF0710099EB7E /* Z-Way-Info.plist */,
+				246EB10615DEF0710099EB7E /* main.m */,
+				246EB10815DEF0710099EB7E /* Z-Way-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = "Z-Way";
+			sourceTree = "<group>";
+		};
+		2492FD2A15DF110D00D631BF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2492FD0E15DF0D1F00D631BF /* ZWDataUpdater.h */,
+				2492FD0F15DF0D1F00D631BF /* ZWDataUpdater.m */,
+				2492FD1115DF0D6C00D631BF /* ZWDataUpdaterEvents.h */,
+				2492FD1215DF0E7A00D631BF /* ZWJsonUpdater.h */,
+				2492FD1315DF0E7A00D631BF /* ZWJsonUpdater.m */,
+				2492FD2B15DF114D00D631BF /* ZWDataTree.h */,
+				2492FD2C15DF114D00D631BF /* ZWDataTree.m */,
+				2492FD4015DF3A6000D631BF /* ZWRunCommand.h */,
+				2492FD4115DF3A6000D631BF /* ZWRunCommand.m */,
+				2484CA0315F58BF3008E60EF /* ZWRulesLoader.h */,
+				2484CA0415F58BF4008E60EF /* ZWRulesLoader.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		2492FD3C15DF2F6C00D631BF /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				246EB12615DEF55D0099EB7E /* ZWRootViewController.h */,
+				246EB12715DEF55D0099EB7E /* ZWRootViewController.m */,
+				2484C9C415F53875008E60EF /* ZWRootViewController_iPhone.xib */,
+				245B16BF15E4926600978FD7 /* ZWRootViewCell.h */,
+				245B16C015E4926600978FD7 /* ZWRootViewCell.m */,
+				246EB12F15DF05110099EB7E /* ZWCategoryItem.h */,
+				246EB13015DF05110099EB7E /* ZWCategoryItem.m */,
+			);
+			name = "Main Screen";
+			sourceTree = "<group>";
+		};
+		2492FD6615E40FEF00D631BF /* Profiles Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2492FD6115E40FDC00D631BF /* ZWProfilesController.h */,
+				2492FD6215E40FDC00D631BF /* ZWProfilesController.m */,
+				2484C9C615F53896008E60EF /* ZWProfilesController_iPhone.xib */,
+				243BFAFD15E42B8F00F45D98 /* ZWProfileEditController.h */,
+				243BFAFE15E42B8F00F45D98 /* ZWProfileEditController.m */,
+				2484C9C815F538B0008E60EF /* ZWProfileEditController_iPhone.xib */,
+				245B16AB15E4573C00978FD7 /* ZWTextEditCell.xib */,
+				24FD17631623748A00AA57DC /* ZWUrlEditCell.xib */,
+				245B16AD15E45AE200978FD7 /* ZWPasswordCell.xib */,
+			);
+			name = "Profiles Screen";
+			sourceTree = "<group>";
+		};
+		2492FD6A15E417A300D631BF /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				243BFAFA15E4223000F45D98 /* Model.xcdatamodeld */,
+				243BFAF515E4195E00F45D98 /* ZWDataStore.h */,
+				243BFAF615E4195E00F45D98 /* ZWDataStore.m */,
+				2492FD6B15E417CC00D631BF /* CMProfile.h */,
+				2492FD6C15E417CC00D631BF /* CMProfile.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		24FD17BA162640CC00AA57DC /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				24FD17B816263F7D00AA57DC /* Default-Landscape@2x~ipad.png */,
+				24FD17B616263F7200AA57DC /* Default-Landscape~ipad.png */,
+				24FD17B416263F5A00AA57DC /* Default-Portrait@2x~ipad.png */,
+				24FD17B216263F4E00AA57DC /* Default-Portrait~ipad.png */,
+				24FD17B016263F3D00AA57DC /* Default-568h@2x.png */,
+				24FD17AE16263F3500AA57DC /* Default@2x.png */,
+				24FD17AC16263F2E00AA57DC /* Default.png */,
+			);
+			name = splash;
+			sourceTree = "<group>";
+		};
+		24FD17BB162640E900AA57DC /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				24FD17A01626271300AA57DC /* Icon-72@2x.png */,
+				24FD179E1626270B00AA57DC /* Icon-72.png */,
+				24471D9015ECF2D90046FF64 /* Icon.png */,
+				24471D9115ECF2D90046FF64 /* Icon@2x.png */,
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
+		24FD17BC162640F800AA57DC /* res */ = {
+			isa = PBXGroup;
+			children = (
+				24FD17BA162640CC00AA57DC /* splash */,
+				24FD17BB162640E900AA57DC /* icon */,
+				248EE90315EAA48600E556D4 /* refreshing.png */,
+				24FD176916237D8700AA57DC /* refreshing@2x.png */,
+				2484C9DC15F5491A008E60EF /* house.png */,
+				24FD178D1625FD3100AA57DC /* house@2x.png */,
+				24FD17BF1626427F00AA57DC /* house~ipad.png */,
+				24FD17BE1626427F00AA57DC /* house@2x~ipad.png */,
+				2484C9D615F54439008E60EF /* lights.png */,
+				24FD178F162600E900AA57DC /* lights@2x.png */,
+				24FD17C7162643D100AA57DC /* lights~ipad.png */,
+				24FD17C6162643D100AA57DC /* lights@2x~ipad.png */,
+				2484C9D815F54883008E60EF /* meters.png */,
+				24FD1793162607F600AA57DC /* meters@2x.png */,
+				24FD17C9162643D100AA57DC /* meters~ipad.png */,
+				24FD17C8162643D100AA57DC /* meters@2x~ipad.png */,
+				2484C9D915F54883008E60EF /* sensors.png */,
+				24FD1791162605BC00AA57DC /* sensors@2x.png */,
+				24FD17CB162643D200AA57DC /* sensors~ipad.png */,
+				24FD17CA162643D100AA57DC /* sensors@2x~ipad.png */,
+				2484C9DE15F549F0008E60EF /* thermostats.png */,
+				24FD17951626097700AA57DC /* thermostats@2x.png */,
+				24FD17CD162643D200AA57DC /* thermostats~ipad.png */,
+				24FD17CC162643D200AA57DC /* thermostats@2x~ipad.png */,
+				2484CA1C15F5A9AE008E60EF /* blinds.png */,
+				24FD179916260F5900AA57DC /* blinds@2x.png */,
+				24FD17C5162643D100AA57DC /* blinds~ipad.png */,
+				24FD17C4162643D100AA57DC /* blinds@2x~ipad.png */,
+				2484C9E015F54AE1008E60EF /* batteries.png */,
+				24FD179716260BD300AA57DC /* batteries@2x.png */,
+				24FD17C3162643D100AA57DC /* batteries~ipad.png */,
+				24FD17C2162643D100AA57DC /* batteries@2x~ipad.png */,
+				2484CA2615F5B75B008E60EF /* arrow-down.png */,
+				24FD176B16237E4C00AA57DC /* arrow-down@2x.png */,
+				2484CA2715F5B75C008E60EF /* arrow-up.png */,
+				24FD176C16237E4C00AA57DC /* arrow-up@2x.png */,
+				24FD177D1625EEDD00AA57DC /* connected-g.png */,
+				24FD177E1625EEDD00AA57DC /* connected-g@2x.png */,
+				24FD177F1625EEDD00AA57DC /* connected-w.png */,
+				24FD17801625EEDD00AA57DC /* connected-w@2x.png */,
+				24FD17851625F05200AA57DC /* disconnected-g.png */,
+				24FD17861625F05200AA57DC /* disconnected-g@2x.png */,
+				24FD17871625F05200AA57DC /* disconnected-w.png */,
+				24FD17881625F05200AA57DC /* disconnected-w@2x.png */,
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		246EB0F515DEF0710099EB7E /* Z-Way */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246EB11715DEF0710099EB7E /* Build configuration list for PBXNativeTarget "Z-Way" */;
+			buildPhases = (
+				246EB0F215DEF0710099EB7E /* Sources */,
+				246EB0F315DEF0710099EB7E /* Frameworks */,
+				246EB0F415DEF0710099EB7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24471D8D15ECEDF90046FF64 /* PBXTargetDependency */,
+			);
+			name = "Z-Way";
+			productName = "Z-Way";
+			productReference = 246EB0F615DEF0710099EB7E /* Z-Way.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		246EB0ED15DEF0700099EB7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZW;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Alex Skalozub";
+			};
+			buildConfigurationList = 246EB0F015DEF0700099EB7E /* Build configuration list for PBXProject "Z-Way" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ru,
+			);
+			mainGroup = 246EB0EB15DEF0700099EB7E;
+			productRefGroup = 246EB0F715DEF0710099EB7E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 24471D8415ECEDEF0046FF64 /* Products */;
+					ProjectRef = 24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				246EB0F515DEF0710099EB7E /* Z-Way */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		24471D8B15ECEDEF0046FF64 /* libGMGridView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGMGridView.a;
+			remoteRef = 24471D8A15ECEDEF0046FF64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		246EB0F415DEF0710099EB7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245B16AC15E4573C00978FD7 /* ZWTextEditCell.xib in Resources */,
+				245B16AE15E45AE200978FD7 /* ZWPasswordCell.xib in Resources */,
+				245B16B915E47B5700978FD7 /* ZWDeviceItemSwitch.xib in Resources */,
+				245B16BB15E47F4E00978FD7 /* ZWDeviceItemDimmer.xib in Resources */,
+				245993C515E4BC6900692406 /* ZWDeviceItemSensorBinary.xib in Resources */,
+				245993CA15E4C1DA00692406 /* ZWDeviceItemSensorMulti.xib in Resources */,
+				245993CC15E4CC0E00692406 /* ZWDeviceItemMeter.xib in Resources */,
+				248EE90415EAA48600E556D4 /* refreshing.png in Resources */,
+				2490582115EC0881009D3806 /* ZWDeviceItemThermostat.xib in Resources */,
+				24471D9215ECF2D90046FF64 /* Icon.png in Resources */,
+				24471D9315ECF2D90046FF64 /* Icon@2x.png in Resources */,
+				2484C9C315F537F7008E60EF /* ZWDevicesView.xib in Resources */,
+				2484C9C515F53875008E60EF /* ZWRootViewController_iPhone.xib in Resources */,
+				2484C9C715F53896008E60EF /* ZWProfilesController_iPhone.xib in Resources */,
+				2484C9C915F538B0008E60EF /* ZWProfileEditController_iPhone.xib in Resources */,
+				2484C9CC15F5396A008E60EF /* Localizable.strings in Resources */,
+				2484C9D715F54439008E60EF /* lights.png in Resources */,
+				2484C9DA15F54884008E60EF /* meters.png in Resources */,
+				2484C9DB15F54884008E60EF /* sensors.png in Resources */,
+				2484C9DD15F5491A008E60EF /* house.png in Resources */,
+				2484C9DF15F549F0008E60EF /* thermostats.png in Resources */,
+				2484C9E115F54AE1008E60EF /* batteries.png in Resources */,
+				2484C9FF15F580E5008E60EF /* ZWDeviceItemBattery.xib in Resources */,
+				2484CA1D15F5A9AE008E60EF /* blinds.png in Resources */,
+				2484CA1F15F5AC36008E60EF /* ZWDeviceItemBlinds.xib in Resources */,
+				2484CA2815F5B75D008E60EF /* arrow-down.png in Resources */,
+				2484CA2915F5B75D008E60EF /* arrow-up.png in Resources */,
+				24FD17641623748A00AA57DC /* ZWUrlEditCell.xib in Resources */,
+				24FD176A16237D8700AA57DC /* refreshing@2x.png in Resources */,
+				24FD176D16237E4C00AA57DC /* arrow-down@2x.png in Resources */,
+				24FD176E16237E4C00AA57DC /* arrow-up@2x.png in Resources */,
+				24FD17811625EEDD00AA57DC /* connected-g.png in Resources */,
+				24FD17821625EEDD00AA57DC /* connected-g@2x.png in Resources */,
+				24FD17831625EEDD00AA57DC /* connected-w.png in Resources */,
+				24FD17841625EEDD00AA57DC /* connected-w@2x.png in Resources */,
+				24FD17891625F05200AA57DC /* disconnected-g.png in Resources */,
+				24FD178A1625F05200AA57DC /* disconnected-g@2x.png in Resources */,
+				24FD178B1625F05200AA57DC /* disconnected-w.png in Resources */,
+				24FD178C1625F05200AA57DC /* disconnected-w@2x.png in Resources */,
+				24FD178E1625FD3100AA57DC /* house@2x.png in Resources */,
+				24FD1790162600E900AA57DC /* lights@2x.png in Resources */,
+				24FD1792162605BD00AA57DC /* sensors@2x.png in Resources */,
+				24FD1794162607F600AA57DC /* meters@2x.png in Resources */,
+				24FD17961626097700AA57DC /* thermostats@2x.png in Resources */,
+				24FD179816260BD300AA57DC /* batteries@2x.png in Resources */,
+				24FD179A16260F5A00AA57DC /* blinds@2x.png in Resources */,
+				24FD179F1626270C00AA57DC /* Icon-72.png in Resources */,
+				24FD17A11626271400AA57DC /* Icon-72@2x.png in Resources */,
+				24FD17AD16263F2F00AA57DC /* Default.png in Resources */,
+				24FD17AF16263F3700AA57DC /* Default@2x.png in Resources */,
+				24FD17B116263F3F00AA57DC /* Default-568h@2x.png in Resources */,
+				24FD17B316263F5000AA57DC /* Default-Portrait~ipad.png in Resources */,
+				24FD17B516263F5B00AA57DC /* Default-Portrait@2x~ipad.png in Resources */,
+				24FD17B716263F7300AA57DC /* Default-Landscape~ipad.png in Resources */,
+				24FD17B916263F7E00AA57DC /* Default-Landscape@2x~ipad.png in Resources */,
+				24FD17C01626427F00AA57DC /* house@2x~ipad.png in Resources */,
+				24FD17C11626427F00AA57DC /* house~ipad.png in Resources */,
+				24FD17CE162643D200AA57DC /* batteries@2x~ipad.png in Resources */,
+				24FD17CF162643D200AA57DC /* batteries~ipad.png in Resources */,
+				24FD17D0162643D200AA57DC /* blinds@2x~ipad.png in Resources */,
+				24FD17D1162643D200AA57DC /* blinds~ipad.png in Resources */,
+				24FD17D2162643D200AA57DC /* lights@2x~ipad.png in Resources */,
+				24FD17D3162643D200AA57DC /* lights~ipad.png in Resources */,
+				24FD17D4162643D200AA57DC /* meters@2x~ipad.png in Resources */,
+				24FD17D5162643D200AA57DC /* meters~ipad.png in Resources */,
+				24FD17D6162643D200AA57DC /* sensors@2x~ipad.png in Resources */,
+				24FD17D7162643D200AA57DC /* sensors~ipad.png in Resources */,
+				24FD17D8162643D200AA57DC /* thermostats@2x~ipad.png in Resources */,
+				24FD17D9162643D200AA57DC /* thermostats~ipad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		246EB0F215DEF0710099EB7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246EB10715DEF0710099EB7E /* main.m in Sources */,
+				246EB10B15DEF0710099EB7E /* ZWAppDelegate.m in Sources */,
+				246EB12915DEF55D0099EB7E /* ZWRootViewController.m in Sources */,
+				246EB13115DF05120099EB7E /* ZWCategoryItem.m in Sources */,
+				2492FD1015DF0D1F00D631BF /* ZWDataUpdater.m in Sources */,
+				2492FD1415DF0E7A00D631BF /* ZWJsonUpdater.m in Sources */,
+				2492FD2D15DF114D00D631BF /* ZWDataTree.m in Sources */,
+				2492FD3415DF1DA600D631BF /* ZWDevicesViewController.m in Sources */,
+				2492FD3F15DF2FA500D631BF /* ZWDeviceItemSwitch.m in Sources */,
+				2492FD4215DF3A6000D631BF /* ZWRunCommand.m in Sources */,
+				2492FD6415E40FDC00D631BF /* ZWProfilesController.m in Sources */,
+				2492FD6D15E417CC00D631BF /* CMProfile.m in Sources */,
+				243BFAF715E4195E00F45D98 /* ZWDataStore.m in Sources */,
+				243BFAFC15E4223000F45D98 /* Model.xcdatamodeld in Sources */,
+				243BFB0015E42B8F00F45D98 /* ZWProfileEditController.m in Sources */,
+				245B16B115E4663D00978FD7 /* NSString+Encoding.m in Sources */,
+				245B16B615E4676600978FD7 /* Base64Transcoder.c in Sources */,
+				245B16B715E4676600978FD7 /* NSData+Encoding.m in Sources */,
+				245B16BE15E47FD400978FD7 /* ZWDeviceItemDimmer.m in Sources */,
+				245B16C115E4926600978FD7 /* ZWRootViewCell.m in Sources */,
+				245993C315E4BC4100692406 /* ZWDeviceItemSensorBinary.m in Sources */,
+				245993C815E4C1C700692406 /* ZWDeviceItemSensorMulti.m in Sources */,
+				245993CF15E4CC3500692406 /* ZWDeviceItemMeter.m in Sources */,
+				2490581F15EC086A009D3806 /* ZWDeviceItemThermostat.m in Sources */,
+				24471D9615ED043B0046FF64 /* ZWDeviceItem.m in Sources */,
+				2484C9F915F55B3D008E60EF /* ZWDeviceInfo.m in Sources */,
+				2484CA0215F58117008E60EF /* ZWDeviceItemBattery.m in Sources */,
+				2484CA0515F58BF4008E60EF /* ZWRulesLoader.m in Sources */,
+				2484CA0C15F58DA7008E60EF /* TFHpple.m in Sources */,
+				2484CA0D15F58DA7008E60EF /* TFHppleElement.m in Sources */,
+				2484CA1115F58E4B008E60EF /* XPathQuery.m in Sources */,
+				2484CA2215F5AC55008E60EF /* ZWDeviceItemBlinds.m in Sources */,
+				2484CA2515F5B3B5008E60EF /* ZWBlindsControl.m in Sources */,
+				24FD179D1626175300AA57DC /* ZWPickerPopup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24471D8D15ECEDF90046FF64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GMGridView;
+			targetProxy = 24471D8C15ECEDF90046FF64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2484C9CE15F5396A008E60EF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2484C9CD15F5396A008E60EF /* en */,
+				2484C9CF15F539AF008E60EF /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		246EB11515DEF0710099EB7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alexey Skalozub (6FDPS35WWE)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "186F14B4-FDBB-4033-BC43-D5EE248A127C";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		246EB11615DEF0710099EB7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		246EB11815DEF0710099EB7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = ../GMGridView;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Z-Way/Z-Way-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../GMGridView,
+					/opt/local/include/libxml2,
+				);
+				INFOPLIST_FILE = "Z-Way/Z-Way-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		246EB11915DEF0710099EB7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = ../GMGridView;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Z-Way/Z-Way-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../GMGridView,
+					/opt/local/include/libxml2,
+				);
+				INFOPLIST_FILE = "Z-Way/Z-Way-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		246EB0F015DEF0700099EB7E /* Build configuration list for PBXProject "Z-Way" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246EB11515DEF0710099EB7E /* Debug */,
+				246EB11615DEF0710099EB7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246EB11715DEF0710099EB7E /* Build configuration list for PBXNativeTarget "Z-Way" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246EB11815DEF0710099EB7E /* Debug */,
+				246EB11915DEF0710099EB7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		243BFAFA15E4223000F45D98 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				243BFAFB15E4223000F45D98 /* Model.xcdatamodel */,
+			);
+			currentVersion = 243BFAFB15E4223000F45D98 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 246EB0ED15DEF0700099EB7E /* Project object */;
+}
