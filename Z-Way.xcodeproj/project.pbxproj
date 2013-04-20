@@ -11,7 +11,6 @@
 		243BFAF915E41D1900F45D98 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243BFAF815E41D1900F45D98 /* CoreData.framework */; };
 		243BFAFC15E4223000F45D98 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 243BFAFA15E4223000F45D98 /* Model.xcdatamodeld */; };
 		243BFB0015E42B8F00F45D98 /* ZWProfileEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BFAFE15E42B8F00F45D98 /* ZWProfileEditController.m */; };
-		24471D8E15ECEE030046FF64 /* libGMGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24471D8B15ECEDEF0046FF64 /* libGMGridView.a */; };
 		24471D9215ECF2D90046FF64 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 24471D9015ECF2D90046FF64 /* Icon.png */; };
 		24471D9315ECF2D90046FF64 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24471D9115ECF2D90046FF64 /* Icon@2x.png */; };
 		24471D9615ED043B0046FF64 /* ZWDeviceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 24471D9515ED043B0046FF64 /* ZWDeviceItem.m */; };
@@ -73,6 +72,7 @@
 		2492FD4215DF3A6000D631BF /* ZWRunCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD4115DF3A6000D631BF /* ZWRunCommand.m */; };
 		2492FD6415E40FDC00D631BF /* ZWProfilesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD6215E40FDC00D631BF /* ZWProfilesController.m */; };
 		2492FD6D15E417CC00D631BF /* CMProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492FD6C15E417CC00D631BF /* CMProfile.m */; };
+		24FB74391722AA590031C06B /* libGMGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FB74381722AA050031C06B /* libGMGridView.a */; };
 		24FD17641623748A00AA57DC /* ZWUrlEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FD17631623748A00AA57DC /* ZWUrlEditCell.xib */; };
 		24FD176A16237D8700AA57DC /* refreshing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD176916237D8700AA57DC /* refreshing@2x.png */; };
 		24FD176D16237E4C00AA57DC /* arrow-down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FD176B16237E4C00AA57DC /* arrow-down@2x.png */; };
@@ -119,14 +119,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		24471D8A15ECEDEF0046FF64 /* PBXContainerItemProxy */ = {
+		24FB74371722AA050031C06B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 78509312149FAC2E000787E4;
 			remoteInfo = GMGridView;
 		};
-		24471D8C15ECEDF90046FF64 /* PBXContainerItemProxy */ = {
+		24FB743A1722AA690031C06B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */;
 			proxyType = 1;
@@ -142,7 +142,7 @@
 		243BFAFB15E4223000F45D98 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		243BFAFD15E42B8F00F45D98 /* ZWProfileEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWProfileEditController.h; sourceTree = "<group>"; };
 		243BFAFE15E42B8F00F45D98 /* ZWProfileEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWProfileEditController.m; sourceTree = "<group>"; };
-		24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GMGridView.xcodeproj; path = ../GMGridView/GMGridView/GMGridView.xcodeproj; sourceTree = "<group>"; };
+		24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GMGridView.xcodeproj; path = GMGridView/GMGridView/GMGridView.xcodeproj; sourceTree = "<group>"; };
 		24471D9015ECF2D90046FF64 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		24471D9115ECF2D90046FF64 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		24471D9415ED043B0046FF64 /* ZWDeviceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDeviceItem.h; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24471D8E15ECEE030046FF64 /* libGMGridView.a in Frameworks */,
+				24FB74391722AA590031C06B /* libGMGridView.a in Frameworks */,
 				243BFAF915E41D1900F45D98 /* CoreData.framework in Frameworks */,
 				246EB12C15DEFAF50099EB7E /* QuartzCore.framework in Frameworks */,
 				246EB0FB15DEF0710099EB7E /* UIKit.framework in Frameworks */,
@@ -302,14 +302,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24471D8415ECEDEF0046FF64 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				24471D8B15ECEDEF0046FF64 /* libGMGridView.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		245993C015E4BABB00692406 /* Devices */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +475,14 @@
 			name = "Data Model";
 			sourceTree = "<group>";
 		};
+		24FB74341722AA050031C06B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24FB74381722AA050031C06B /* libGMGridView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		24FD17BA162640CC00AA57DC /* splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,7 +573,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				24471D8D15ECEDF90046FF64 /* PBXTargetDependency */,
+				24FB743B1722AA690031C06B /* PBXTargetDependency */,
 			);
 			name = "Z-Way";
 			productName = "Z-Way";
@@ -603,7 +603,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 24471D8415ECEDEF0046FF64 /* Products */;
+					ProductGroup = 24FB74341722AA050031C06B /* Products */;
 					ProjectRef = 24471D8315ECEDEF0046FF64 /* GMGridView.xcodeproj */;
 				},
 			);
@@ -615,11 +615,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		24471D8B15ECEDEF0046FF64 /* libGMGridView.a */ = {
+		24FB74381722AA050031C06B /* libGMGridView.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libGMGridView.a;
-			remoteRef = 24471D8A15ECEDEF0046FF64 /* PBXContainerItemProxy */;
+			remoteRef = 24FB74371722AA050031C06B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -748,10 +748,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		24471D8D15ECEDF90046FF64 /* PBXTargetDependency */ = {
+		24FB743B1722AA690031C06B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GMGridView;
-			targetProxy = 24471D8C15ECEDF90046FF64 /* PBXContainerItemProxy */;
+			targetProxy = 24FB743A1722AA690031C06B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
