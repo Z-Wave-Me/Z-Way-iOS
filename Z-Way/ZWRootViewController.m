@@ -83,7 +83,7 @@
             NSObject *specificType = [inst valueForKeyPath:@"data.specificType.value"];
             if ([genericType isKindOfClass:[NSNumber class]] && [specificType isKindOfClass:[NSNumber class]])
             {
-                if ([(NSNumber*)genericType integerValue] != 0x11 || [(NSNumber*)specificType integerValue] < 3)
+                if ([(NSNumber*)genericType integerValue] != 0x11 || [(NSNumber*)specificType integerValue] < 3 || [(NSNumber*)specificType integerValue] == 4)
                 {
                     [result addObject:[ZWDeviceInfo deviceWithType:@"Switch" forDeviceId:devId device:dev andInstanceId:instId instance:inst andCCId:ccId withData:cc]];
                 }
@@ -96,7 +96,7 @@
             NSObject *specificType = [inst valueForKeyPath:@"data.specificType.value"];
             if ([genericType isKindOfClass:[NSNumber class]] && [specificType isKindOfClass:[NSNumber class]])
             {
-                if ([(NSNumber*)genericType integerValue] != 0x11 || [(NSNumber*)specificType integerValue] < 3)
+                if ([(NSNumber*)genericType integerValue] != 0x11 || [(NSNumber*)specificType integerValue] < 3 || [(NSNumber*)specificType integerValue] == 4)
                 {
                     [result addObject:[ZWDeviceInfo deviceWithType:@"Dimmer" forDeviceId:devId device:dev andInstanceId:instId instance:inst andCCId:ccId withData:cc]];
                 }
@@ -196,7 +196,7 @@
             NSObject *specificType = [inst valueForKeyPath:@"data.specificType.value"];
             if ([genericType isKindOfClass:[NSNumber class]] && [specificType isKindOfClass:[NSNumber class]])
             {
-                if ([(NSNumber*)genericType integerValue] == 0x11 && [(NSNumber*)specificType integerValue] >= 3)
+                if ([(NSNumber*)genericType integerValue] == 0x11 && [(NSNumber*)specificType integerValue] >= 3 && [(NSNumber*)specificType integerValue] != 4)
                 {
                     [result addObject:[ZWDeviceInfo deviceWithType:@"Blinds" forDeviceId:devId device:dev andInstanceId:instId instance:inst andCCId:ccId withData:cc]];
                 }
